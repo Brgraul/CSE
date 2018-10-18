@@ -1,0 +1,10 @@
+f1 = @(x)(x.*x + 3);
+f2 = @(x,y)(2*y - x);
+x = 0:0.1:2;
+y = 2:-0.1:0; 
+fr1 = f1(x); 
+fr2 = f2(x,y); 
+plot(x,fr1); 
+figure;
+plot(x,fr2); 
+clear all; 
